@@ -1,0 +1,14 @@
+!pip install gTTS
+
+# Install and import necessary library
+
+from gtts import gTTS
+from IPython.display import Audio
+
+# Input text
+text_to_speak = "Hello students, welcome to our English class!"
+
+# Convert text to speech
+tts = gTTS(text_to_speak)
+tts.save('output.mp3')
+Audio('output.mp3')
